@@ -1,0 +1,32 @@
+#basic functions/methods for simple and advanced stats
+
+    #accounts for the fact that 3 pointers are worth more points
+def effective_fg (self):
+    return (self.fgm + 0.5 * self.fg3m) / self.fga
+  
+    #simple fg stat
+def fg_percentage (self): 
+    return self.fgm / self.fga
+
+    #simple three pt stat
+def fg3pt_percentage (self):
+    return self.fg3m / fg3a
+    
+    #simple ft stat
+def ft_percentage (self):
+    return self.ftm / self.fta
+    
+    #displays how well a team shoots free throws and how often they get to the line
+def ft_rate(self): 
+    return self.ftm / self.fga
+
+    #% of possesions that end in turnovers
+def turnover_pct(self): 
+    return self.tov/(self.fga + .475 * (self.fta + self.ast + self.tov))
+    
+    #hollinger assist ratio 
+def hAST_ratio (self): 
+    return self.ast / (self.fga + .475 * self.fta + self.ast + self.tov)
+
+def true_shooting(self):
+    return self.pts / 2 *(self.fga + (0.44 * self.fta))
