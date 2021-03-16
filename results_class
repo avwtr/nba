@@ -1,0 +1,38 @@
+
+class Results: 
+    def __init__(self, num_wins, num_losses):
+        self.num_wins = num_wins
+        self.num_losses = num_losses
+
+
+
+twolves = Results(num_wins = twolves_data.W.iloc[0], num_losses = twolves_data.L.iloc[0])
+mavericks = Results(num_wins = mavericks_data.W.iloc[0], num_losses = mavericks_data.L.iloc[0])
+thunder = Results(num_wins = thunder_data.W.iloc[0], num_losses = thunder_data.L.iloc[0])
+pelicans = Results(num_wins = pelicans_data.W.iloc[0], num_losses = pelicans_data.L.iloc[0])
+kings = Results(num_wins = kings_data.W.iloc[0], num_losses = kings_data.L.iloc[0])
+rockets = Results(num_wins = rockets_data.W.iloc[0], num_losses = rockets_data.L.iloc[0])
+grizzlies = Results(num_wins = grizzlies_data.W.iloc[0], num_losses = grizzlies_data.L.iloc[0])
+blazers = Results(num_wins = blazers_data.W.iloc[0], num_losses = blazers_data.L.iloc[0])
+warriors = Results(num_wins = warriors_data.W.iloc[0], num_losses = warriors_data.L.iloc[0])
+spurs = Results(num_wins = spurs_data.W.iloc[0], num_losses = spurs_data.L.iloc[0])
+suns = Results(num_wins = suns_data.W.iloc[0], num_losses = suns_data.L.iloc[0])
+nuggets = Results(num_wins = nuggets_data.W.iloc[0], num_losses = nuggets_data.L.iloc[0])
+clippers = Results(num_wins = clippers_data.W.iloc[0], num_losses = clippers_data.L.iloc[0])
+lakers = Results(num_wins = lakers_data.W.iloc[0], num_losses = lakers_data.L.iloc[0])
+jazz = Results(num_wins = jazz_data.W.iloc[0], num_losses = jazz_data.L.iloc[0])
+pistons = Results(num_wins = pistons_data.W.iloc[0], num_losses = pistons_data.L.iloc[0])
+wizards = Results(num_wins = wizards_data.W.iloc[0], num_losses = wizards_data.L.iloc[0])
+heat = Results(num_wins = heat_data.W.iloc[0], num_losses = heat_data.L.iloc[0])
+bulls = Results(num_wins = bulls_data.W.iloc[0], num_losses = bulls_data.L.iloc[0])
+magic =Results(num_wins = magic_data.W.iloc[0], num_losses = magic_data.L.iloc[0])
+hornets = Results(num_wins = hornets_data.W.iloc[0], num_losses = hornets_data.L.iloc[0])
+cavs = Results(num_wins = cavs_data.W.iloc[0], num_losses = cavs_data.L.iloc[0])
+raptors = Results(num_wins = raptors_data.W.iloc[0], num_losses = raptors_data.L.iloc[0])
+hawks = Results(num_wins = hawks_data.W.iloc[0], num_losses = hawks_data.L.iloc[0])
+knicks = Results(num_wins = knicks_data.W.iloc[0], num_losses = knicks_data.L.iloc[0])
+pacers = Results(num_wins = pacers_data.W.iloc[0], num_losses = pacers_data.L.iloc[0])
+celtics = Results(num_wins = celtics_data.W.iloc[0], num_losses = celtics_data.L.iloc[0])
+nets = Results(num_wins = nets_data.W.iloc[0], num_losses = nets_data.L.iloc[0])
+bucks =Results(num_wins = bucks_data.W.iloc[0], num_losses = bucks_data.L.iloc[0])
+sixers = Results(num_wins = sixers_data.W.iloc[0], num_losses = sixers_data.L.iloc[0])
