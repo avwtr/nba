@@ -1,2 +1,2 @@
 # nba
-building an NBA statistical analysis model 
+building an NBA statistical analysis model with python 
