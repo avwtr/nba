@@ -1,0 +1,20 @@
+#pull all team elo values
+
+for elo in team_data: 
+    name = elo['name']
+    num_wins = elo['num_wins']
+    num_losses = elo['num_losses']
+    elo_rating = 500 + (num_wins * 16) - (num_losses  * 16)
+    print('the', name, 'have an elo rating of', elo_rating)
+    
+    
+#format for sorting team elo values
+
+dict1 = {'bucks': 555, 'sixers': 410, 'lakers': 621}
+sorted_dict = {}
+sorted_keys = sorted(dict1, key=dict1.get)  # [1, 3, 2]
+
+for w in sorted_keys:
+    sorted_dict[w] = dict1[w]
+
+print(sorted_dict)
