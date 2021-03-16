@@ -1,0 +1,26 @@
+#matchup comparison work in progress
+
+home_team = input('enter the home team')
+away_team = input('enter the away team')
+if home_team == 'sixers':
+    home_elo_rating = simple_elo_rating(sixers)
+if away_team == 'sixers':
+    away_elo_rating = simple_elo_rating(sixers)
+if home_team == 'lakers':
+    home_elo_rating = simple_elo_rating(lakers)
+if away_team == 'lakers':
+    away_elo_rating = simple_elo_rating(lakers)
+else: 
+    pass
+
+# 0 - 30 in increments of 10. 0 meaning distance traveled will have no impact on game outcome, 30 means distance traveled is likely to have a tangible impact of game outcome
+distance_traveled_scale = input('enter the value of distance traveled')
+distance_traveled_scale = int(distance_traveled_scale)
+initial_away_team_matchup_score = away_elo_rating - 10
+initial_home_team_matchup_score = home_elo_rating + 10
+
+final_away_team_matchup_score = away_elo_rating - 10 - distance_traveled_scale
+final_home_team_matchup_score = initial_home_team_matchup_score
+
+
+print(away_team,':',final_away_team_matchup_score, 'vs', home_team,':',initial_home_team_matchup_score)
