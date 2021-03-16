@@ -1,5 +1,10 @@
 #basic functions/methods for simple and advanced stats
 
+#starts at a baseline of 500, +16 points for win, -16 points for loss
+def simple_elo_rating(self):
+    return 500 + (self.num_wins * 16) - (self.num_losses * 16)
+
+
     #accounts for the fact that 3 pointers are worth more points
 def effective_fg (self):
     return (self.fgm + 0.5 * self.fg3m) / self.fga
