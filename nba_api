@@ -1,0 +1,152 @@
+#structure for pulling from the NBA api
+
+
+#imports
+import pandas as pd
+from nba_api.stats.static import players 
+from nba_api.stats.static import teams
+from nba_api.stats.endpoints import playergamelog 
+from nba_api.stats.endpoints import teamgamelog
+from nba_api.stats.endpoints import teamyearbyyearstats
+
+#key variables
+player_dict = players.get_players()
+team_dict = teams.get_teams()
+
+
+#team for-loop
+sixers = [team for team in team_dict if team['full_name'] == 'Philadelphia 76ers'][0]  
+bucks = [team for team in team_dict if team['full_name'] == 'Milwaukee Bucks'][0]
+nets = [team for team in team_dict if team ['full_name'] == 'Brooklyn Nets'][0]
+celtics = [team for team in team_dict if team ['full_name'] == 'Boston Celtics'][0]
+pacers = [team for team in team_dict if team ['full_name'] == 'Indiana Pacers'][0]
+hornets = [team for team in team_dict if team ['full_name'] == 'Charlotte Hornets'][0]
+cavs = [team for team in team_dict if team ['full_name'] == 'Cleveland Cavaliers'][0]
+hawks = [team for team in team_dict if team ['full_name'] == 'Atlanta Hawks'][0]
+knicks = [team for team in team_dict if team ['full_name'] == 'New York Knicks'][0]
+raptors = [team for team in team_dict if team ['full_name'] == 'Toronto Raptors'][0]
+bulls = [team for team in team_dict if team ['full_name'] == 'Chicago Bulls'][0]
+magic = [team for team in team_dict if team ['full_name'] == 'Orlando Magic'][0]
+heat = [team for team in team_dict if team ['full_name'] == 'Miami Heat'][0]
+wizards = [team for team in team_dict if team ['full_name'] == 'Washington Wizards'][0]
+pistons = [team for team in team_dict if team ['full_name'] == 'Detroit Pistons'][0]
+
+
+#get id
+sixers_id = sixers['id']
+bucks_id = bucks['id']
+nets_id = nets['id']
+celtics_id = celtics['id']
+pacers_id = pacers['id']
+hornets_id = hornets['id']
+cavs_id = cavs['id']
+hawks_id = hawks['id']
+knicks_id = knicks['id']
+raptors_id = raptors['id']
+bulls_id = bulls['id']
+magic_id = magic['id']
+heat_id = heat['id']
+wizards_id = wizards['id']
+pistons_id = pistons['id']
+
+#team game logs
+gamelog_sixers = teamgamelog.TeamGameLog(team_id='1610612755', season = '2020')
+gamelog_sixers_df = gamelog_sixers.get_data_frames()[0]  
+
+gamelog_bucks = teamgamelog.TeamGameLog(team_id = '1610612749', season = '2020')
+gamelog_bucks_df = gamelog_bucks.get_data_frames()[0]
+
+gamelog_nets = teamgamelog.TeamGameLog(team_id = '1610612751', season = '2020')
+gamelog_nets_df = gamelog_nets.get_data_frames()[0]
+
+gamelog_celtics = teamgamelog.TeamGameLog(team_id = '1610612738', season = '2020')
+gamelog_celtics_df = gamelog_celtics.get_data_frames()[0]
+
+gamelog_pacers = teamgamelog.TeamGameLog(team_id = '1610612738', season = '2020')
+gamelog_pacers_df = gamelog_pacers.get_data_frames()[0]
+
+gamelog_hornets = teamgamelog.TeamGameLog(team_id = '1610612766', season = '2020')
+gamelog_hornets_df = gamelog_hornets.get_data_frames()[0]
+
+gamelog_cavs = teamgamelog.TeamGameLog(team_id = '1610612739', season = '2020')
+gamelog_cavs_df = gamelog_cavs.get_data_frames()[0]
+
+gamelog_hawks = teamgamelog.TeamGameLog(team_id = '1610612737', season = '2020')
+gamelog_hawks_df = gamelog_hawks.get_data_frames()[0]
+
+gamelog_knicks = teamgamelog.TeamGameLog(team_id = '1610612752', season = '2020')
+gamelog_knicks_df = gamelog_knicks.get_data_frames()[0]
+
+gamelog_raptors = teamgamelog.TeamGameLog(team_id = '1610612761', season = '2020')
+gamelog_raptors_df = gamelog_raptors.get_data_frames()[0]
+
+gamelog_bulls = teamgamelog.TeamGameLog(team_id = '1610612741', season = '2020')
+gamelog_bulls_df = gamelog_bulls.get_data_frames()[0]
+
+gamelog_magic = teamgamelog.TeamGameLog(team_id = '1610612753', season = '2020')
+gamelog_magic_df = gamelog_magic.get_data_frames()[0]
+
+gamelog_heat = teamgamelog.TeamGameLog(team_id = '1610612748', season = '2020')
+gamelog_heat_df = gamelog_heat.get_data_frames()[0]
+
+gamelog_wizards = teamgamelog.TeamGameLog(team_id = '1610612764', season = '2020')
+gamelog_wizards_df = gamelog_wizards.get_data_frames()[0]
+
+gamelog_pistons = teamgamelog.TeamGameLog(team_id = '1610612765', season = '2020')
+gamelog_pistons_df = gamelog_pistons.get_data_frames()[0]
+
+
+#exported data frames 
+df1 = gamelog_sixers_df
+df1.to_csv('~/Desktop/data/east/gamelog_sixers', index =False)       
+
+df2 = gamelog_bucks_df 
+df2.to_csv('~/Desktop/data/east/gamelog_bucks', index = False)
+
+df3 = gamelog_nets_df
+df3.to_csv('~/Desktop/data/east/gamelog_nets', index = False)
+
+df4 = gamelog_nets_df
+df4.to_csv('~/Desktop/data/east/gamelog_celtics', index = False)
+
+df5 = gamelog_pacers_df
+df5.to_csv('~/Desktop/data/east/gamelog_pacers', index = False)
+
+df6 = gamelog_hornets_df
+df6.to_csv('~/Desktop/data/east/gamelog_hornets', index = False)
+
+df7 = gamelog_cavs_df
+df7.to_csv('~/Desktop/data/east/gamelog_cavs', index = False)
+
+df8 = gamelog_hawks_df
+df8.to_csv('~/Desktop/data/east/gamelog_hawks', index = False)
+
+df9 = gamelog_knicks_df 
+df9.to_csv('~/Desktop/data/east/gamelog_knicks', index = False)
+
+df10 = gamelog_raptors_df
+df10.to_csv('~/Desktop/data/east/gamelog_raptors', index = False)
+
+df11 = gamelog_bulls_df
+df11.to_csv('~/Desktop/data/east/gamelog_bulls', index = False)
+
+df12 = gamelog_magic_df
+df12.to_csv('~/Desktop/data/east/gamelog_magic', index = False)
+
+df13 = gamelog_heat_df
+df13.to_csv('~/Desktop/data/east/gamelog_heat', index = False)
+
+df14 = gamelog_wizards_df
+df14.to_csv('~/Desktop/data/east/gamelog_wizards', index = False)
+
+df15 = gamelog_pistons_df
+df15.to_csv('~/Desktop/data/east/gamelog_pistons', index = False)
+
+
+##player for-loop 
+#bron = [player for player in player_dict if player ['full_name'] == 'LeBron James'][0]
+#bron_id = bron['id']
+
+##player game logs 
+#gamelog_bron = playergamelog.PlayerGameLog(player_id='2544', season = '2013')
+#gamelog_bron_df = gamelog_bron.get_data_frames()[0]
