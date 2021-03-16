@@ -1,0 +1,47 @@
+class Team:
+    def __init__(self, name, fgm, fga, fg3a, fg3m, fta, ftm, oreb, dreb, ast, stl, tov, blk, pf, pts):
+        self.name = name
+        self.fgm = fgm
+        self.fga = fga
+        self.fg3a = fg3a
+        self.fg3m = fg3m
+        self.fta = fta
+        self.ftm = ftm 
+        self.oreb = oreb
+        self.dreb = dreb
+        self.ast = ast
+        self.stl = stl
+        self.tov = tov
+        self.blk = blk
+        self.pf = pf
+        
+twolves = Team(name ='Minnesota Timberwolves', fgm = twolves_fgm, fga = twolves_fga, fg3a = twolves_fg3a, fg3m = twolves_fg3m, fta = twolves_fta, ftm = twolves_ftm, oreb = twolves_oreb, dreb = twolves_dreb, ast = twolves_ast, stl = twolves_stl, tov = twolves_tov, blk = twolves_blk, pf = twolves_pf, pts = twolves_pts)         
+mavericks = Team(name ='Dallas Mavericks', fgm = mavericks_fgm, fga = mavericks_fga, fg3m = mavericks_fg3m, fg3a = mavericks_fga , fta = mavericks_fta, ftm = mavericks_ftm, oreb = mavericks_oreb, dreb = mavericks_dreb, ast = mavericks_ast, stl = mavericks_stl , tov = mavericks_tov, blk = mavericks_blk, pf = mavericks_pf , pts = mavericks_pts)
+thunder = Team(name ='Oklahoma City Thunder', fgm = thunder_fgm, fga =thunder_fga, fg3m = thunder_fg3m, fg3a = thunder_fg3a, fta = thunder_fta, ftm = thunder_ftm, oreb = thunder_oreb, dreb = thunder_dreb, ast = thunder_ast, stl = thunder_stl, tov = thunder_tov, blk = thunder_blk, pf = thunder_pf, pts = thunder_pts)
+pelicans = Team(name ='New Orleans Pelicans', fgm = pelicans_fgm, fga =pelicans_fga, fg3m = pelicans_fg3m, fg3a = pelicans_fg3a, fta = pelicans_fta, ftm = pelicans_ftm, oreb = pelicans_oreb, dreb = pelicans_dreb, ast = pelicans_ast, stl = pelicans_stl, tov = pelicans_tov, blk = pelicans_blk, pf = pelicans_pf, pts = pelicans_pts)
+kings = Team(name ='Sacramento Kings', fgm = kings_fgm, fga =kings_fga, fg3m = kings_fg3m, fg3a = kings_fg3a, fta = kings_fta, ftm = kings_ftm, oreb = kings_oreb, dreb = kings_dreb, ast = kings_ast, stl = kings_stl, tov = kings_tov, blk = kings_blk, pf = kings_pf, pts = kings_pts)
+rockets = Team(name ='Houston Rockets', fgm = rockets_fgm, fga =rockets_fga, fg3m =rockets_fg3m , fg3a = rockets_fg3a, fta = rockets_fta, ftm = rockets_ftm, oreb = rockets_oreb, dreb = rockets_dreb, ast = rockets_ast, stl = rockets_stl, tov = rockets_tov, blk =rockets_blk , pf = rockets_pf, pts = rockets_pts)
+grizzlies = Team(name ='Memphis Grizzlies', fgm = grizzlies_fgm, fga =grizzlies_fga, fg3m = grizzlies_fg3m, fg3a = grizzlies_fg3a, fta =grizzlies_fta , ftm = grizzlies_ftm, oreb = grizzlies_oreb, dreb =grizzlies_dreb , ast = grizzlies_ast, stl = grizzlies_stl, tov = grizzlies_tov, blk = grizzlies_blk, pf = grizzlies_pf, pts = grizzlies_pts)
+blazers = Team(name ='Portland Trail Blazers', fgm = blazers_fgm, fga =blazers_fga, fg3m = blazers_fg3m, fg3a = blazers_fg3a, fta = blazers_fta, ftm =blazers_ftm , oreb =blazers_oreb , dreb =blazers_dreb , ast = blazers_ast, stl = blazers_stl, tov = blazers_tov, blk = blazers_blk, pf = blazers_pf, pts =blazers_pts )
+warriors = Team(name ='Golden State Warriors', fgm = warriors_fgm, fga =warriors_fga, fg3m = warriors_fg3m, fg3a =warriors_fg3a , fta = warriors_fta, ftm =warriors_ftm , oreb =warriors_oreb , dreb =warriors_dreb , ast = warriors_ast, stl =warriors_stl , tov =warriors_tov , blk = warriors_blk, pf = warriors_pf, pts =warriors_pts )
+spurs = Team(name ='San Antonio Spurs', fgm =spurs_fgm , fga =spurs_fga, fg3m =spurs_fg3m , fg3a =spurs_fg3a , fta =spurs_fta , ftm =spurs_ftm , oreb =spurs_oreb , dreb =spurs_dreb , ast =spurs_ast , stl = spurs_stl, tov = spurs_tov, blk = spurs_blk, pf = spurs_pf, pts = spurs_pts)
+suns = Team(name ='Phoenix Suns', fgm =suns_fgm , fga =suns_fga, fg3m =suns_fg3m , fg3a =suns_fg3a , fta =suns_fta , ftm =suns_ftm , oreb =suns_oreb , dreb =suns_dreb , ast =suns_ast , stl =suns_stl , tov =suns_tov , blk =suns_blk , pf = suns_pf, pts = suns_pts)
+nuggets = Team(name ='Denver Nuggets', fgm =nuggets_fgm , fga =nuggets_fga, fg3m =nuggets_fg3m , fg3a =nuggets_fg3a , fta =nuggets_fta , ftm =nuggets_ftm , oreb = nuggets_oreb, dreb =nuggets_dreb , ast =nuggets_ast , stl =nuggets_stl , tov =nuggets_tov , blk =nuggets_blk , pf = nuggets_pf, pts = nuggets_pts)
+clippers = Team(name ='Los Angeles Clippers', fgm =clippers_fgm , fga =clippers_fga, fg3m =clippers_fg3m , fg3a =clippers_fg3a , fta =clippers_fta , ftm = clippers_ftm, oreb = clippers_oreb, dreb = clippers_dreb, ast = clippers_ast, stl =clippers_stl , tov =clippers_tov , blk =clippers_blk , pf = clippers_pf, pts = clippers_pts)
+lakers = Team(name ='Los Angeles Lakers', fgm =lakers_fgm , fga =lakers_fga, fg3m = lakers_fg3m, fg3a =lakers_fg3a , fta =lakers_fta , ftm =lakers_ftm , oreb =lakers_oreb , dreb =lakers_dreb , ast =lakers_ast , stl =lakers_stl , tov = lakers_tov, blk = lakers_blk, pf =lakers_pf , pts =lakers_pts )
+jazz = Team(name ='Utah Jazz', fgm =jazz_fgm , fga =jazz_fga, fg3m =jazz_fg3m , fg3a =jazz_fg3a , fta =jazz_fta , ftm =jazz_ftm , oreb =jazz_oreb , dreb = jazz_dreb, ast =jazz_ast , stl =jazz_stl , tov =jazz_tov , blk =jazz_blk , pf = jazz_pf, pts =jazz_pts )
+pistons = Team(name ='Detriot Pistons', fgm =pistons_fgm , fga =pistons_fga, fg3m = pistons_fg3m, fg3a =pistons_fg3a , fta = pistons_fta , ftm =pistons_ftm , oreb =pistons_oreb , dreb = pistons_dreb, ast = pistons_ast, stl = pistons_stl, tov =pistons_tov , blk =pistons_blk , pf = pistons_pf, pts = pistons_pts)
+wizards = Team(name ='Washington Wizards', fgm =wizards_fgm , fga =wizards_fga, fg3m =wizards_fg3m , fg3a =wizards_fg3a , fta =wizards_fta , ftm =wizards_ftm , oreb =wizards_oreb , dreb =wizards_dreb , ast =wizards_ast , stl = wizards_stl, tov =wizards_tov , blk =wizards_blk , pf = wizards_pf, pts =wizards_pts )
+heat = Team(name ='Miami Heat', fgm = heat_fgm, fga =heat_fgm, fg3m =heat_fg3m , fg3a =heat_fg3a , fta =heat_fta , ftm =heat_ftm , oreb =heat_oreb , dreb =heat_dreb , ast =heat_ast , stl =heat_stl , tov = heat_tov, blk =heat_blk , pf = heat_pf, pts =heat_pts )
+bulls = Team(name ='Chicago Bulls', fgm =bulls_fgm , fga =bulls_fga, fg3m =bulls_fg3m , fg3a =bulls_fg3a , fta =bulls_fta , ftm = bulls_ftm, oreb =bulls_oreb , dreb =bulls_dreb , ast =bulls_ast , stl =bulls_stl , tov = bulls_tov, blk = bulls_blk, pf = bulls_pf, pts = bulls_pts)
+magic = Team(name ='Orlando Magic', fgm =magic_fgm , fga =magic_fga, fg3m =magic_fg3m , fg3a =magic_fg3a, fta =magic_fta , ftm =magic_ftm , oreb = magic_oreb, dreb = magic_dreb, ast = magic_ast, stl =magic_stl , tov = magic_tov, blk =magic_blk , pf =magic_pf , pts =magic_pts )
+hornets = Team(name ='Charlotte Hornets', fgm =hornets_fgm , fga =hornets_fga, fg3m =hornets_fg3m , fg3a =hornets_fg3a , fta = hornets_fta, ftm =hornets_ftm , oreb =hornets_oreb , dreb =hornets_dreb , ast =hornets_ast , stl =hornets_stl , tov = hornets_tov, blk = hornets_blk, pf = hornets_pf, pts =hornets_pts )
+cavs = Team(name ='Cleveland Cavaliers', fgm =cavs_fgm , fga =cavs_fga, fg3m = cavs_fg3m, fg3a =cavs_fg3a , fta =cavs_fta , ftm =cavs_ftm , oreb =cavs_oreb , dreb =cavs_dreb , ast = cavs_ast, stl = cavs_stl, tov = cavs_tov, blk =cavs_blk , pf =cavs_pf , pts =cavs_pts )
+raptors = Team(name ='Toronto Raptors', fgm =raptors_fgm , fga =raptors_fga, fg3m =raptors_fg3m , fg3a =raptors_fg3a , fta =raptors_fta , ftm =raptors_ftm, oreb =raptors_oreb , dreb =raptors_dreb , ast =raptors_ast , stl =raptors_stl , tov =raptors_tov , blk =raptors_blk , pf = raptors_pf, pts = raptors_pf)
+hawks = Team(name ='Atlanta Hawks', fgm =hawks_fgm , fga =hawks_fga, fg3m = hawks_fg3m, fg3a =hawks_fg3a , fta =hawks_fta , ftm =hawks_ftm , oreb =hawks_oreb , dreb =hawks_dreb , ast =hawks_ast , stl = hawks_stl, tov =hawks_tov , blk =hawks_blk , pf = hawks_pf, pts = hawks_pts)
+knicks = Team(name ='New York Knicks', fgm =knicks_fgm , fga =knicks_fga, fg3m =knicks_fg3m , fg3a =knicks_fg3a , fta =knicks_fta , ftm =knicks_ftm , oreb =knicks_oreb , dreb = knicks_dreb, ast = knicks_ast, stl =knicks_stl , tov =knicks_tov , blk = knicks_blk, pf = knicks_pf, pts = knicks_pts)
+pacers = Team(name ='Indiana Pacers', fgm =pacers_fgm , fga =pacers_fga, fg3m =pacers_fg3m , fg3a =pacers_fg3a , fta =pacers_fta , ftm = pacers_ftm, oreb =pacers_oreb , dreb =pacers_dreb , ast = pacers_ast, stl =pacers_stl , tov =pacers_tov , blk = pacers_blk, pf = pacers_pf, pts = pacers_pts)
+celtics = Team(name ='Boston Celtics', fgm =celtics_fgm , fga =celtics_fga, fg3m =celtics_fg3m , fg3a =celtics_fg3a , fta =celtics_fta , ftm = celtics_ftm, oreb = celtics_oreb, dreb =celtics_dreb , ast = celtics_ast, stl = celtics_stl, tov =celtics_tov , blk =celtics_blk , pf = celtics_pf, pts = celtics_pts)
+nets = Team(name ='Brooklyn Nets', fgm =nets_fgm , fga =nets_fga, fg3m =nets_fg3m , fg3a = nets_fg3a, fta =nets_fta , ftm =nets_ftm , oreb =nets_oreb , dreb =nets_dreb , ast =nets_ast , stl =nets_stl , tov =nets_tov , blk =nets_blk , pf = nets_pf, pts =nets_pts )
+bucks = Team(name ='Milwaukee Bucks', fgm =bucks_fgm , fga =bucks_fga, fg3m =bucks_fg3m , fg3a =bucks_fg3a , fta = bucks_fta, ftm =bucks_ftm , oreb =bucks_oreb , dreb =bucks_dreb , ast =bucks_ast , stl =bucks_stl , tov = bucks_tov, blk =bucks_blk , pf =bucks_pf , pts =bucks_pts )
+sixers = Team(name ='Philadelphia 76ers', fgm =sixers_fgm , fga =sixers_fga, fg3m =sixers_fg3m , fg3a =sixers_fg3a , fta =sixers_fta , ftm =sixers_ftm , oreb =sixers_oreb , dreb = sixers_dreb, ast =sixers_ast , stl = sixers_stl, tov = sixers_tov, blk =sixers_blk , pf = sixers_pf, pts =sixers_pts )
